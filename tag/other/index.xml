@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Other | Ayush Verma</title>
+    <link>https://ayushvrma.github.io/tag/other/</link>
+      <atom:link href="https://ayushvrma.github.io/tag/other/index.xml" rel="self" type="application/rss+xml" />
+    <description>Other</description>
+    <generator>Wowchemy (https://wowchemy.com)</generator><language>en-us</language><lastBuildDate>Sat, 05 Mar 2022 15:20:29 +0530</lastBuildDate>
+    <image>
+      <url>https://ayushvrma.github.io/media/icon_hu94e0b57965b746969b9236f8aee3969f_4315_512x512_fill_lanczos_center_3.png</url>
+      <title>Other</title>
+      <link>https://ayushvrma.github.io/tag/other/</link>
+    </image>
+    
+    <item>
+      <title>Hand Tracking</title>
+      <link>https://ayushvrma.github.io/project/handtracking/</link>
+      <pubDate>Sat, 05 Mar 2022 15:20:29 +0530</pubDate>
+      <guid>https://ayushvrma.github.io/project/handtracking/</guid>
+      <description></description>
+    </item>
+    
+  </channel>
+</rss>

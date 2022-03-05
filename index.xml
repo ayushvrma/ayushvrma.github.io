@@ -1,0 +1,92 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Ayush Verma</title>
+    <link>https://ayushvrma.github.io/</link>
+      <atom:link href="https://ayushvrma.github.io/index.xml" rel="self" type="application/rss+xml" />
+    <description>Ayush Verma</description>
+    <generator>Wowchemy (https://wowchemy.com)</generator><language>en-us</language><lastBuildDate>Sat, 01 Jun 2030 13:00:00 +0000</lastBuildDate>
+    <image>
+      <url>https://ayushvrma.github.io/media/icon_hu94e0b57965b746969b9236f8aee3969f_4315_512x512_fill_lanczos_center_3.png</url>
+      <title>Ayush Verma</title>
+      <link>https://ayushvrma.github.io/</link>
+    </image>
+    
+    <item>
+      <title>Example Talk</title>
+      <link>https://ayushvrma.github.io/talk/example-talk/</link>
+      <pubDate>Sat, 01 Jun 2030 13:00:00 +0000</pubDate>
+      <guid>https://ayushvrma.github.io/talk/example-talk/</guid>
+      <description>&lt;div class=&#34;alert alert-note&#34;&gt;
+  &lt;div&gt;
+    Click on the &lt;strong&gt;Slides&lt;/strong&gt; button above to view the built-in slides feature.
+  &lt;/div&gt;
+&lt;/div&gt;
+&lt;p&gt;Slides can be added in a few ways:&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;strong&gt;Create&lt;/strong&gt; slides using Wowchemy&amp;rsquo;s &lt;a href=&#34;https://wowchemy.com/docs/managing-content/#create-slides&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;&lt;em&gt;Slides&lt;/em&gt;&lt;/a&gt; feature and link using &lt;code&gt;slides&lt;/code&gt; parameter in the front matter of the talk file&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;Upload&lt;/strong&gt; an existing slide deck to &lt;code&gt;static/&lt;/code&gt; and link using &lt;code&gt;url_slides&lt;/code&gt; parameter in the front matter of the talk file&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;Embed&lt;/strong&gt; your slides (e.g. Google Slides) or presentation video on this page using &lt;a href=&#34;https://wowchemy.com/docs/writing-markdown-latex/&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;shortcodes&lt;/a&gt;.&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;Further event details, including &lt;a href=&#34;https://wowchemy.com/docs/writing-markdown-latex/&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;page elements&lt;/a&gt; such as image galleries, can be added to the body of this page.&lt;/p&gt;
+</description>
+    </item>
+    
+    <item>
+      <title>Hand Tracking</title>
+      <link>https://ayushvrma.github.io/project/handtracking/</link>
+      <pubDate>Sat, 05 Mar 2022 15:20:29 +0530</pubDate>
+      <guid>https://ayushvrma.github.io/project/handtracking/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Flutter Walli</title>
+      <link>https://ayushvrma.github.io/project/flutterwalli/</link>
+      <pubDate>Sat, 05 Mar 2022 15:18:01 +0530</pubDate>
+      <guid>https://ayushvrma.github.io/project/flutterwalli/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Oyus Chat</title>
+      <link>https://ayushvrma.github.io/project/oyuschat/</link>
+      <pubDate>Sat, 05 Mar 2022 15:11:36 +0530</pubDate>
+      <guid>https://ayushvrma.github.io/project/oyuschat/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>OpenCV Tutorial</title>
+      <link>https://ayushvrma.github.io/project/opencvtutorial/</link>
+      <pubDate>Sat, 05 Mar 2022 15:09:52 +0530</pubDate>
+      <guid>https://ayushvrma.github.io/project/opencvtutorial/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>GuideToGANs</title>
+      <link>https://ayushvrma.github.io/project/guidetogans/</link>
+      <pubDate>Sat, 05 Mar 2022 14:37:55 +0530</pubDate>
+      <guid>https://ayushvrma.github.io/project/guidetogans/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Style Transfer</title>
+      <link>https://ayushvrma.github.io/project/styletransfer/</link>
+      <pubDate>Thu, 03 Feb 2022 15:02:08 +0530</pubDate>
+      <guid>https://ayushvrma.github.io/project/styletransfer/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title></title>
+      <link>https://ayushvrma.github.io/admin/config.yml</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <guid>https://ayushvrma.github.io/admin/config.yml</guid>
+      <description></description>
+    </item>
+    
+  </channel>
+</rss>
