@@ -1,0 +1,20 @@
+<!DOCTYPE html><html lang="en"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1">
+<title>Gallery — Ayush Verma</title><meta name="description" content="Ayush Verma — computer vision and AI researcher.">
+<link rel="stylesheet" href="style.css"></head><body><div class="cover" role="img" aria-label="Himalayan peaks above the clouds"></div><div class="wrap">
+<nav><a href="index.html">Home</a><a href="gallery.html" class="on">Gallery</a><a href="blog.html">Blog</a></nav>
+<div id="list"><h2>Gallery</h2><div id="g" class="grid"></div></div>
+<div id="view"><button id="back">Back to gallery</button><img id="vi" alt=""><h2 id="vc"></h2><p id="vn"></p></div>
+<script>
+const list=document.getElementById('list'),view=document.getElementById('view'),$=id=>document.getElementById(id);
+function show(p){$('vi').src=p.src;$('vi').alt=p.caption||'';$('vc').textContent=p.caption||'';$('vn').textContent=p.note||'';list.style.display='none';view.classList.add('show');scrollTo(0,0)}
+function hide(){view.classList.remove('show');list.style.display=''}
+$('back').onclick=hide;addEventListener('keydown',e=>e.key==='Escape'&&hide());
+fetch('gallery/gallery.json').then(r=>r.json()).then(l=>{
+ const g=$('g');
+ if(!l.length){g.outerHTML='<p class="empty">Photos coming soon.</p>';return}
+ l.forEach(p=>{const b=document.createElement('button');b.className='tile';b.onclick=()=>show(p);
+  const i=new Image();i.src=p.src;i.alt=p.caption||'';i.loading='lazy';b.appendChild(i);
+  const c=document.createElement('div');c.className='cap';c.textContent=p.caption||'';b.appendChild(c);g.appendChild(b)})
+});
+</script>
+<footer>© Ayush Verma</footer></div></body></html>

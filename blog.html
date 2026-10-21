@@ -1,0 +1,22 @@
+<!DOCTYPE html><html lang="en"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1">
+<title>Blog — Ayush Verma</title><meta name="description" content="Ayush Verma — computer vision and AI researcher.">
+<link rel="stylesheet" href="style.css"></head><body><div class="cover" role="img" aria-label="Himalayan peaks above the clouds"></div><div class="wrap">
+<nav><a href="index.html">Home</a><a href="gallery.html">Gallery</a><a href="blog.html" class="on">Blog</a></nav>
+<h2 id="t">Blog</h2><div id="out" class="empty">Loading…</div>
+<script src="https://cdn.jsdelivr.net/npm/marked@12.0.2/marked.min.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/dompurify@3.1.6/dist/purify.min.js"></script>
+<script>
+const out=document.getElementById('out'),slug=new URLSearchParams(location.search).get('p');
+fetch('posts/posts.json').then(r=>r.json()).then(async list=>{
+ out.className='';
+ if(slug){
+  const meta=list.find(p=>p.slug===slug);
+  const md=await fetch('posts/'+encodeURIComponent(slug)+'.md').then(r=>{if(!r.ok)throw 0;return r.text()});
+  document.title=(meta?meta.title:slug)+' — Ayush Verma';
+  document.getElementById('t').textContent=meta?meta.title:slug;
+  out.innerHTML='<p class="tags">'+(meta?meta.date:'')+' · <a href="blog.html">All posts</a></p><div class="md">'+DOMPurify.sanitize(marked.parse(md))+'</div>';
+ }else if(!list.length){out.className='empty';out.textContent='Coming soon.'}
+ else out.innerHTML=list.sort((a,b)=>b.date.localeCompare(a.date)).map(p=>`<div class="post"><a href="blog.html?p=${p.slug}"><b>${p.title}</b></a><div class="tags">${p.date}</div><p>${p.summary||''}</p></div>`).join('');
+}).catch(()=>{out.className='empty';out.textContent=slug?'Post not found.':'Coming soon.'});
+</script>
+<footer>© Ayush Verma</footer></div></body></html>
